@@ -29,10 +29,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:RFM69W
-LIBS:mjAdditions
 LIBS:mcp1703
 LIBS:74AHC1G125
+LIBS:rfm69
 LIBS:RFM69BreakoutBoard-cache
 EELAYER 27 0
 EELAYER END
@@ -40,7 +39,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "24 feb 2014"
+Date "25 feb 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -48,21 +47,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RFM69W U4
-U 1 1 52FF74D2
-P 9000 4700
-F 0 "U4" H 9000 4600 50  0000 C CNN
-F 1 "RFM69HW" H 9000 4800 50  0000 C CNN
-F 2 "MODULE" H 9000 4700 50  0001 C CNN
-F 3 "DOCUMENTATION" H 9000 4700 50  0001 C CNN
-F 4 "HopeRF" H 9000 4700 60  0001 C CNN "MFG Name"
-F 5 "RFM69HW-433S2" H 9000 4700 60  0001 C CNN "MFG Part Number"
-F 6 "RFM69HW-433S2" H 9000 4700 60  0001 C CNN "Distributor Part Number"
-F 7 "http://www.hoperfusa.com/details.jsp?pid=136" H 9000 4700 60  0001 C CNN "Distributor Part Number Link"
-	1    9000 4700
-	-1   0    0    -1  
-$EndComp
 $Comp
 L 74LVC245 U2
 U 1 1 53009DDE
@@ -209,7 +193,7 @@ Text Label 1900 4600 0    60   ~ 0
 CS
 Text Label 1900 4700 0    60   ~ 0
 INT
-Text Label 8200 4950 0    60   ~ 0
+Text Label 7800 5050 0    60   ~ 0
 ANA
 Text Label 6650 4150 0    60   ~ 0
 CLK
@@ -219,17 +203,6 @@ Text Label 6650 4350 0    60   ~ 0
 CS
 Text Label 6400 5500 0    60   ~ 0
 MISO
-$Comp
-L R R4
-U 1 1 53089115
-P 7900 4950
-F 0 "R4" V 7980 4950 40  0000 C CNN
-F 1 "0" V 7907 4951 31  0000 C CNN
-F 2 "~" V 7830 4950 30  0000 C CNN
-F 3 "~" H 7900 4950 30  0000 C CNN
-	1    7900 4950
-	0    -1   -1   0   
-$EndComp
 $Comp
 L GND #PWR6
 U 1 1 530BB7C1
@@ -254,17 +227,6 @@ F 3 "" H 6750 5400 60  0000 C CNN
 $EndComp
 Text Label 6400 5600 0    60   ~ 0
 CS
-$Comp
-L GND #PWR9
-U 1 1 530BB991
-P 7500 5100
-F 0 "#PWR9" H 7500 5100 30  0001 C CNN
-F 1 "GND" H 7500 5030 30  0001 C CNN
-F 2 "" H 7500 5100 60  0000 C CNN
-F 3 "" H 7500 5100 60  0000 C CNN
-	1    7500 5100
-	1    0    0    -1  
-$EndComp
 $Comp
 L +5V #PWR2
 U 1 1 530BBAA3
@@ -388,6 +350,112 @@ F 3 "~" H 7050 4250 60  0000 C CNN
 	1    7050 4250
 	1    0    0    -1  
 $EndComp
+$Comp
+L TEST W7
+U 1 1 530BC463
+P 6950 5500
+F 0 "W7" H 6950 5560 40  0000 C CNN
+F 1 "TEST" H 6950 5430 40  0000 C CNN
+F 2 "~" H 6950 5500 60  0000 C CNN
+F 3 "~" H 6950 5500 60  0000 C CNN
+	1    6950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST W10
+U 1 1 530BC518
+P 7350 4350
+F 0 "W10" H 7350 4410 40  0000 C CNN
+F 1 "TEST" H 7350 4280 40  0000 C CNN
+F 2 "~" H 7350 4350 60  0000 C CNN
+F 3 "~" H 7350 4350 60  0000 C CNN
+	1    7350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 530BC65B
+P 6750 3150
+F 0 "C5" H 6750 3250 40  0000 L CNN
+F 1 ".1u" H 6756 3065 40  0000 L CNN
+F 2 "~" H 6788 3000 30  0000 C CNN
+F 3 "~" H 6750 3150 60  0000 C CNN
+F 4 "Yageo" H 6750 3150 60  0001 C CNN "MFG Name"
+F 5 "CC0603KRX7R7BB104" H 6750 3150 60  0001 C CNN "MFG Part Number"
+F 6 "311-1088-1-ND" H 6750 3150 60  0001 C CNN "Distributor Part Number"
+F 7 " http://www.digikey.com/product-detail/en/CC0603KRX7R7BB104/311-1088-1-ND/302998?cur=USD" H 6750 3150 60  0001 C CNN "Distributor Part Number Link"
+	1    6750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 530BC729
+P 4850 5600
+F 0 "C4" H 4850 5700 40  0000 L CNN
+F 1 ".1u" H 4856 5515 40  0000 L CNN
+F 2 "~" H 4888 5450 30  0000 C CNN
+F 3 "~" H 4850 5600 60  0000 C CNN
+F 4 "Yageo" H 4850 5600 60  0001 C CNN "MFG Name"
+F 5 "CC0603KRX7R7BB104" H 4850 5600 60  0001 C CNN "MFG Part Number"
+F 6 "311-1088-1-ND" H 4850 5600 60  0001 C CNN "Distributor Part Number"
+F 7 " http://www.digikey.com/product-detail/en/CC0603KRX7R7BB104/311-1088-1-ND/302998?cur=USD" H 4850 5600 60  0001 C CNN "Distributor Part Number Link"
+	1    4850 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C6
+U 1 1 530BC833
+P 9850 3150
+F 0 "C6" H 9850 3250 40  0000 L CNN
+F 1 ".1u" H 9856 3065 40  0000 L CNN
+F 2 "~" H 9888 3000 30  0000 C CNN
+F 3 "~" H 9850 3150 60  0000 C CNN
+F 4 "Samsung" H 9850 3150 60  0001 C CNN "MFG Name"
+F 5 "CL21B105KOFNNNE" H 9850 3150 60  0001 C CNN "MFG Part Number"
+F 6 "1276-1026-1-ND" H 9850 3150 60  0001 C CNN "Distributor Part Number"
+F 7 "http://www.digikey.com/product-detail/en/CL21B105KOFNNNE/1276-1026-1-ND/3889112" H 9850 3150 60  0001 C CNN "Distributor Part Number Link"
+	1    9850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 530BC925
+P 9850 3750
+F 0 "C7" H 9850 3850 40  0000 L CNN
+F 1 "10n" H 9856 3665 40  0000 L CNN
+F 2 "~" H 9888 3600 30  0000 C CNN
+F 3 "~" H 9850 3750 60  0000 C CNN
+F 4 "Samsung" H 9850 3750 60  0001 C CNN "MFG Name"
+F 5 "CL21B105KOFNNNE" H 9850 3750 60  0001 C CNN "MFG Part Number"
+F 6 "1276-1026-1-ND" H 9850 3750 60  0001 C CNN "Distributor Part Number"
+F 7 "http://www.digikey.com/product-detail/en/CL21B105KOFNNNE/1276-1026-1-ND/3889112" H 9850 3750 60  0001 C CNN "Distributor Part Number Link"
+	1    9850 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 550  4450 0    71   ~ 0
+Arduino ->
+$Comp
+L RFM69 U?
+U 1 1 530CA97F
+P 9000 4700
+F 0 "U?" H 9000 4600 50  0000 C CNN
+F 1 "RFM69" H 9000 4800 50  0000 C CNN
+F 2 "MODULE" H 9000 4300 50  0001 C CNN
+F 3 "DOCUMENTATION" H 9050 4200 50  0001 C CNN
+	1    9000 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 530CAAF5
+P 1800 6350
+F 0 "#PWR?" H 1800 6350 30  0001 C CNN
+F 1 "GND" H 1800 6280 30  0001 C CNN
+F 2 "" H 1800 6350 60  0000 C CNN
+F 3 "" H 1800 6350 60  0000 C CNN
+	1    1800 6350
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	6550 4050 6900 4050
 Wire Wire Line
@@ -411,7 +479,7 @@ Connection ~ 3100 3150
 Wire Wire Line
 	1950 4100 1700 4100
 Wire Wire Line
-	1800 4200 1800 6050
+	1800 4200 1800 6350
 Wire Wire Line
 	1800 4200 1700 4200
 Wire Wire Line
@@ -419,21 +487,13 @@ Wire Wire Line
 Wire Wire Line
 	2150 4700 2150 5950
 Wire Wire Line
-	9950 4450 9950 5950
-Wire Wire Line
-	9950 4450 9750 4450
-Wire Wire Line
 	7650 4150 7650 4750
 Wire Wire Line
 	7650 4750 8250 4750
 Wire Wire Line
-	7850 5050 8250 5050
-Wire Wire Line
 	7350 4650 8250 4650
 Wire Wire Line
 	7200 4450 8250 4450
-Wire Wire Line
-	9750 5050 9850 5050
 Wire Wire Line
 	6400 5600 7200 5600
 Wire Wire Line
@@ -468,22 +528,9 @@ Wire Wire Line
 Wire Wire Line
 	1950 3000 1950 3150
 Wire Wire Line
-	8150 4950 8250 4950
-Wire Wire Line
-	8250 4850 8150 4850
-Wire Wire Line
-	8150 4850 8150 5050
-Connection ~ 8150 5050
-Wire Wire Line
-	7850 6050 7850 5050
-Wire Wire Line
 	5150 4850 4900 4850
 Wire Wire Line
 	4900 4850 4900 4950
-Wire Wire Line
-	7650 4950 7500 4950
-Wire Wire Line
-	7500 4950 7500 5100
 Wire Wire Line
 	4400 3000 4400 3600
 Wire Wire Line
@@ -516,11 +563,11 @@ Wire Wire Line
 Wire Wire Line
 	1800 6050 3250 6050
 Wire Wire Line
-	3650 6050 7850 6050
+	8000 6050 3650 6050
 Wire Wire Line
 	2150 5950 3800 5950
 Wire Wire Line
-	9950 5950 4200 5950
+	10550 5950 4200 5950
 Wire Wire Line
 	6400 5400 6750 5400
 Wire Wire Line
@@ -531,113 +578,57 @@ Wire Wire Line
 	6550 4250 6850 4250
 Wire Wire Line
 	7250 4250 8000 4250
-$Comp
-L TEST W7
-U 1 1 530BC463
-P 6950 5500
-F 0 "W7" H 6950 5560 40  0000 C CNN
-F 1 "TEST" H 6950 5430 40  0000 C CNN
-F 2 "~" H 6950 5500 60  0000 C CNN
-F 3 "~" H 6950 5500 60  0000 C CNN
-	1    6950 5500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 5500 6750 5500
 Wire Wire Line
 	7150 5500 7350 5500
-$Comp
-L TEST W10
-U 1 1 530BC518
-P 7350 4350
-F 0 "W10" H 7350 4410 40  0000 C CNN
-F 1 "TEST" H 7350 4280 40  0000 C CNN
-F 2 "~" H 7350 4350 60  0000 C CNN
-F 3 "~" H 7350 4350 60  0000 C CNN
-	1    7350 4350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6550 4350 7150 4350
 Wire Wire Line
 	7550 4350 8150 4350
-$Comp
-L C C5
-U 1 1 530BC65B
-P 6750 3150
-F 0 "C5" H 6750 3250 40  0000 L CNN
-F 1 ".1u" H 6756 3065 40  0000 L CNN
-F 2 "~" H 6788 3000 30  0000 C CNN
-F 3 "~" H 6750 3150 60  0000 C CNN
-F 4 "Yageo" H 6750 3150 60  0001 C CNN "MFG Name"
-F 5 "CC0603KRX7R7BB104" H 6750 3150 60  0001 C CNN "MFG Part Number"
-F 6 "311-1088-1-ND" H 6750 3150 60  0001 C CNN "Distributor Part Number"
-F 7 " http://www.digikey.com/product-detail/en/CC0603KRX7R7BB104/311-1088-1-ND/302998?cur=USD" H 6750 3150 60  0001 C CNN "Distributor Part Number Link"
-	1    6750 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6750 2950 6750 2300
 Connection ~ 6750 2300
 Wire Wire Line
 	6750 3950 6750 3350
-$Comp
-L C C4
-U 1 1 530BC729
-P 4850 5600
-F 0 "C4" H 4850 5700 40  0000 L CNN
-F 1 ".1u" H 4856 5515 40  0000 L CNN
-F 2 "~" H 4888 5450 30  0000 C CNN
-F 3 "~" H 4850 5600 60  0000 C CNN
-F 4 "Yageo" H 4850 5600 60  0001 C CNN "MFG Name"
-F 5 "CC0603KRX7R7BB104" H 4850 5600 60  0001 C CNN "MFG Part Number"
-F 6 "311-1088-1-ND" H 4850 5600 60  0001 C CNN "Distributor Part Number"
-F 7 " http://www.digikey.com/product-detail/en/CC0603KRX7R7BB104/311-1088-1-ND/302998?cur=USD" H 4850 5600 60  0001 C CNN "Distributor Part Number Link"
-	1    4850 5600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5050 5600 5300 5600
 Wire Wire Line
 	4400 5600 4650 5600
-$Comp
-L C C6
-U 1 1 530BC833
-P 9850 3150
-F 0 "C6" H 9850 3250 40  0000 L CNN
-F 1 ".1u" H 9856 3065 40  0000 L CNN
-F 2 "~" H 9888 3000 30  0000 C CNN
-F 3 "~" H 9850 3150 60  0000 C CNN
-F 4 "Samsung" H 9850 3150 60  0001 C CNN "MFG Name"
-F 5 "CL21B105KOFNNNE" H 9850 3150 60  0001 C CNN "MFG Part Number"
-F 6 "1276-1026-1-ND" H 9850 3150 60  0001 C CNN "Distributor Part Number"
-F 7 "http://www.digikey.com/product-detail/en/CL21B105KOFNNNE/1276-1026-1-ND/3889112" H 9850 3150 60  0001 C CNN "Distributor Part Number Link"
-	1    9850 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9850 2300 9850 2950
-$Comp
-L C C7
-U 1 1 530BC925
-P 9850 3750
-F 0 "C7" H 9850 3850 40  0000 L CNN
-F 1 "10n" H 9856 3665 40  0000 L CNN
-F 2 "~" H 9888 3600 30  0000 C CNN
-F 3 "~" H 9850 3750 60  0000 C CNN
-F 4 "Samsung" H 9850 3750 60  0001 C CNN "MFG Name"
-F 5 "CL21B105KOFNNNE" H 9850 3750 60  0001 C CNN "MFG Part Number"
-F 6 "1276-1026-1-ND" H 9850 3750 60  0001 C CNN "Distributor Part Number"
-F 7 "http://www.digikey.com/product-detail/en/CL21B105KOFNNNE/1276-1026-1-ND/3889112" H 9850 3750 60  0001 C CNN "Distributor Part Number Link"
-	1    9850 3750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9850 3750 9850 3350
 Wire Wire Line
-	9850 3950 9850 4350
+	9850 3950 9850 5050
+Connection ~ 1800 6050
 Wire Wire Line
-	9850 4350 9750 4350
-Text Notes 550  4450 0    71   ~ 0
-Arduino ->
+	10550 4450 10550 5950
+$Comp
+L CONN_1 P?
+U 1 1 530CAD59
+P 7650 5050
+F 0 "P?" H 7730 5050 40  0000 L CNN
+F 1 "CONN_1" H 7650 5105 30  0001 C CNN
+F 2 "~" H 7650 5050 60  0000 C CNN
+F 3 "~" H 7650 5050 60  0000 C CNN
+	1    7650 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 4850 8000 6050
+Wire Wire Line
+	8000 4950 8250 4950
+Wire Wire Line
+	7800 5050 8250 5050
+Connection ~ 8000 5050
+Text Notes 7450 5200 0    60   ~ 0
+hole for ant. wire
+Wire Wire Line
+	8250 4850 8000 4850
+Connection ~ 8000 4950
+Wire Wire Line
+	9750 4450 10550 4450
+Wire Wire Line
+	9850 5050 9750 5050
 $EndSCHEMATC

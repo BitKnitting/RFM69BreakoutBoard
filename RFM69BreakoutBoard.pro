@@ -1,4 +1,4 @@
-update=2/24/2014 2:26:29 PM
+update=2/25/2014 6:31:59 AM
 version=1
 last_client=eeschema
 [cvpcb]
@@ -48,7 +48,7 @@ LibName16=valves
 LibName17=RFM69BreakoutBoardFootPrints
 [eeschema]
 version=1
-LibDir=
+LibDir=../../../../Contextual Electronics/KiCad stuff;../../RFM69BreakoutBoard
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -87,3 +87,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=mcp1703
 LibName32=74AHC1G125
+LibName33=rfm69
