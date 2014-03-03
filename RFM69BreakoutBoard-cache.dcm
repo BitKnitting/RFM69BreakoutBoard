@@ -1,3 +1,7 @@
-EESchema-DOCLIB  Version 2.0  Date: 3/1/2014 6:09:59 AM
+EESchema-DOCLIB  Version 2.0  Date: 3/3/2014 6:37:51 AM
+#
+$CMP CP1
+D Condensateur polarise
+$ENDCMP
 #
 #End Doc Library
