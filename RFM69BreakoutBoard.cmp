@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 3/2/2014 1:13:03 PM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 3/3/2014 2:43:30 PM
 
 BeginCmp
 TimeStamp = /5305B226;
@@ -11,7 +11,7 @@ BeginCmp
 TimeStamp = /530F2E4A;
 Reference = C2;
 ValeurCmp = 10u;
-IdModule  = 10uCap;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -25,7 +25,7 @@ BeginCmp
 TimeStamp = /530F2E03;
 Reference = C4;
 ValeurCmp = 10u;
-IdModule  = 10uCap;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -47,6 +47,69 @@ TimeStamp = /5300A048;
 Reference = P1;
 ValeurCmp = BB Holes;
 IdModule  = 7_PINS;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314EAED;
+Reference = P2;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314EAFA;
+Reference = P3;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314E601;
+Reference = P4;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314E60E;
+Reference = P5;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314E614;
+Reference = P6;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314E61A;
+Reference = P7;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314ED90;
+Reference = P8;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314EE29;
+Reference = P9;
+ValeurCmp = TST;
+IdModule  = PINTST;
+EndCmp
+
+BeginCmp
+TimeStamp = /5314EC8D;
+Reference = P10;
+ValeurCmp = TST;
+IdModule  = PINTST;
 EndCmp
 
 BeginCmp
@@ -89,69 +152,6 @@ TimeStamp = /530CA97F;
 Reference = U3;
 ValeurCmp = RFM69HW;
 IdModule  = RFM69HW;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6C3A;
-Reference = W1;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6826;
-Reference = W2;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6927;
-Reference = W3;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6D19;
-Reference = W4;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6A06;
-Reference = W5;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6AE5;
-Reference = W6;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6DF6;
-Reference = W7;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F6ED5;
-Reference = W8;
-ValeurCmp = TEST;
-IdModule  = SMTST;
-EndCmp
-
-BeginCmp
-TimeStamp = /530F7038;
-Reference = W9;
-ValeurCmp = TEST;
-IdModule  = SMTST;
 EndCmp
 
 EndListe
