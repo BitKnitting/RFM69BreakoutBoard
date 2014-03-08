@@ -39,7 +39,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "7 mar 2014"
+Date "8 mar 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -408,17 +408,6 @@ MISO_3V3
 Text Label 7150 4750 0    60   ~ 0
 CLK_3V3
 $Comp
-L GND #PWR09
-U 1 1 5319E5C9
-P 7400 5250
-F 0 "#PWR09" H 7400 5250 30  0001 C CNN
-F 1 "GND" H 7400 5180 30  0001 C CNN
-F 2 "" H 7400 5250 60  0000 C CNN
-F 3 "" H 7400 5250 60  0000 C CNN
-	1    7400 5250
-	1    0    0    -1  
-$EndComp
-$Comp
 L TST P11
 U 1 1 5319E822
 P 8000 4300
@@ -465,7 +454,6 @@ Wire Wire Line
 Wire Wire Line
 	1950 3150 4400 3150
 Connection ~ 4400 3150
-Connection ~ 6750 2300
 Wire Wire Line
 	9850 2300 9850 5050
 Wire Wire Line
@@ -493,7 +481,7 @@ Connection ~ 2800 4600
 Wire Wire Line
 	2150 5950 10550 5950
 Wire Wire Line
-	1800 6050 7400 6050
+	7400 6050 1800 6050
 Connection ~ 1800 6050
 Wire Wire Line
 	2800 5300 2800 5650
@@ -595,7 +583,7 @@ Wire Wire Line
 	7800 4850 7800 5050
 Connection ~ 7800 5050
 Wire Wire Line
-	7400 5050 7400 5250
+	7400 5050 7400 6050
 Wire Wire Line
 	6850 4450 6850 4300
 Connection ~ 6850 4450
