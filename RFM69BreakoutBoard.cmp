@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 3/10/2014 3:37:22 AM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 3/12/2014 12:59:50 PM
 
 BeginCmp
 TimeStamp = /5305B226;
@@ -50,7 +50,7 @@ IdModule  = PINTST;
 EndCmp
 
 BeginCmp
-TimeStamp = /5314EAFA;
+TimeStamp = /5320C19F;
 Reference = P3;
 ValeurCmp = TST;
 IdModule  = PINTST;
@@ -120,8 +120,8 @@ IdModule  = PINTST;
 EndCmp
 
 BeginCmp
-TimeStamp = /531D967E;
-Reference = P13;
+TimeStamp = /531E2B17;
+Reference = P14;
 ValeurCmp = TST;
 IdModule  = PINTST;
 EndCmp
@@ -134,7 +134,7 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /5305AF64;
+TimeStamp = /5320BCF0;
 Reference = U1;
 ValeurCmp = MCP1703;
 IdModule  = SOT-23A;
