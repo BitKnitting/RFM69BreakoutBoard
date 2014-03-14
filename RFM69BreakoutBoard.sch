@@ -39,7 +39,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "12 mar 2014"
+Date "14 mar 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -195,17 +195,6 @@ F 3 "" H 4050 3550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR06
-U 1 1 531316EA
-P 2100 4000
-F 0 "#PWR06" H 2100 4090 20  0001 C CNN
-F 1 "+5V" H 2100 4090 30  0000 C CNN
-F 2 "" H 2100 4000 60  0000 C CNN
-F 3 "" H 2100 4000 60  0000 C CNN
-	1    2100 4000
-	-1   0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR07
 U 1 1 5313177E
 P 4500 1900
@@ -224,61 +213,6 @@ Text Label 8250 4950 0    60   ~ 0
 ANA
 Text Label 10100 5150 0    60   ~ 0
 3.3V
-$Comp
-L TST P4
-U 1 1 5314E601
-P 2750 4000
-F 0 "P4" H 2750 4300 40  0000 C CNN
-F 1 "TST" H 2750 4250 30  0000 C CNN
-F 2 "~" H 2750 4000 60  0000 C CNN
-F 3 "~" H 2750 4000 60  0000 C CNN
-	1    2750 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L TST P5
-U 1 1 5314E60E
-P 3000 4000
-F 0 "P5" H 3000 4300 40  0000 C CNN
-F 1 "TST" H 3000 4250 30  0000 C CNN
-F 2 "~" H 3000 4000 60  0000 C CNN
-F 3 "~" H 3000 4000 60  0000 C CNN
-	1    3000 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L TST P6
-U 1 1 5314E614
-P 3200 4000
-F 0 "P6" H 3200 4300 40  0000 C CNN
-F 1 "TST" H 3200 4250 30  0000 C CNN
-F 2 "~" H 3200 4000 60  0000 C CNN
-F 3 "~" H 3200 4000 60  0000 C CNN
-	1    3200 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L TST P7
-U 1 1 5314E61A
-P 3400 4000
-F 0 "P7" H 3400 4300 40  0000 C CNN
-F 1 "TST" H 3400 4250 30  0000 C CNN
-F 2 "~" H 3400 4000 60  0000 C CNN
-F 3 "~" H 3400 4000 60  0000 C CNN
-	1    3400 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L TST P2
-U 1 1 5314EAED
-P 2250 6300
-F 0 "P2" H 2250 6600 40  0000 C CNN
-F 1 "TST" H 2250 6550 30  0000 C CNN
-F 2 "~" H 2250 6300 60  0000 C CNN
-F 3 "~" H 2250 6300 60  0000 C CNN
-	1    2250 6300
-	-1   0    0    1   
-$EndComp
 $Comp
 L TST P10
 U 1 1 5314EC8D
@@ -379,17 +313,6 @@ F 3 "~" H 8000 4300 60  0000 C CNN
 	1    8000 4300
 	1    0    0    -1  
 $EndComp
-$Comp
-L TST P14
-U 1 1 531E2B17
-P 1750 4000
-F 0 "P14" H 1750 4300 40  0000 C CNN
-F 1 "TST" H 1750 4250 30  0000 C CNN
-F 2 "~" H 1750 4000 60  0000 C CNN
-F 3 "~" H 1750 4000 60  0000 C CNN
-	1    1750 4000
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	1950 2300 2500 2300
 Wire Wire Line
@@ -444,13 +367,6 @@ Wire Wire Line
 Wire Wire Line
 	10100 5050 10100 5200
 Wire Wire Line
-	2750 4300 2750 4000
-Wire Wire Line
-	3000 4400 3000 4000
-Wire Wire Line
-	2250 6300 2250 6050
-Connection ~ 2250 6050
-Wire Wire Line
 	5500 3800 5500 2300
 Connection ~ 5500 2300
 Wire Wire Line
@@ -480,9 +396,6 @@ Wire Wire Line
 	6250 4550 8300 4550
 Connection ~ 7050 4550
 Wire Wire Line
-	3400 4000 3400 4600
-Connection ~ 3400 4600
-Wire Wire Line
 	9800 5050 10550 5050
 Connection ~ 10100 5050
 Connection ~ 10200 5050
@@ -502,10 +415,6 @@ Wire Wire Line
 Connection ~ 5600 3400
 Connection ~ 6100 6050
 Wire Wire Line
-	2100 4100 2100 4000
-Wire Wire Line
-	1750 4000 1750 4100
-Wire Wire Line
 	1700 4100 2100 4100
 Connection ~ 2100 4100
 Wire Wire Line
@@ -513,19 +422,14 @@ Wire Wire Line
 Wire Wire Line
 	9850 4450 9850 3500
 Wire Wire Line
-	3200 4500 3200 4000
-Wire Wire Line
 	1700 4500 4950 4500
-Connection ~ 3200 4500
 Wire Wire Line
 	1700 4400 5150 4400
-Connection ~ 3000 4400
 Wire Wire Line
 	6750 4450 8300 4450
 Wire Wire Line
 	6850 4300 6850 4450
 Connection ~ 6850 4450
-Connection ~ 1750 4100
 Wire Wire Line
 	6500 4650 6500 5000
 Wire Wire Line
@@ -538,7 +442,6 @@ Wire Wire Line
 	4650 4300 4650 3500
 Wire Wire Line
 	4650 3500 9850 3500
-Connection ~ 2750 4300
 Wire Wire Line
 	5150 4400 5150 4950
 Wire Wire Line
@@ -599,18 +502,17 @@ Wire Wire Line
 Wire Wire Line
 	4050 4200 4050 4400
 Connection ~ 4050 4400
-$Comp
-L TST P3
-U 1 1 5320C19F
-P 3650 4000
-F 0 "P3" H 3650 4300 40  0000 C CNN
-F 1 "TST" H 3650 4250 30  0000 C CNN
-F 2 "~" H 3650 4000 60  0000 C CNN
-F 3 "~" H 3650 4000 60  0000 C CNN
-	1    3650 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3650 4000 3650 4700
-Connection ~ 3650 4700
+	2100 4100 2100 4000
+$Comp
+L +5V #PWR06
+U 1 1 531316EA
+P 2100 4000
+F 0 "#PWR06" H 2100 4090 20  0001 C CNN
+F 1 "+5V" H 2100 4090 30  0000 C CNN
+F 2 "" H 2100 4000 60  0000 C CNN
+F 3 "" H 2100 4000 60  0000 C CNN
+	1    2100 4000
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
